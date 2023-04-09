@@ -16,9 +16,30 @@
             color: blue;
             text-decoration: line-through;
         }
+        div p:nth-child(2){
+            color:red
+        }
+        p::first-letter{
+            color:pink
+        }
+        p::before{
+            content: "...";
+        }
+        p::after{
+            content: " ! ! ! ";
+        }
+        ::placeholder{
+            color: greenyellow;
+        }
     </style>
 </head>
 <body>
     <p>Lorem Ipsum</p>
+    <div>
+        <p>Hola</p>
+        <p>QUien</p>
+        <p>Eres?</p>
+    </div>
+    <input type="text" placeholder="nombre">
 </body>
 </html>
