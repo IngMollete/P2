@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentacion</title>
+    <title>Presentation</title>
 
     <style>
 
@@ -27,6 +27,7 @@
         background: green;
         margin-top: 0px;
         box-sizing: border-box;
+        opacity: 0.6;
 }
 
 .Structure{
@@ -34,27 +35,139 @@
         border-radius: 7%;
         width: 400px;
         height: 600px;
+        /*background-image: none;*/
         background: #282b30;
-        box-sizing: border-box;
-        
-        
+        box-sizing: border-box;      
+}
+
+.Image{
+
+box-sizing: border-box;
+background: red;
+width: 100px;
+height: 100px;
+position: absolute;
+top: 150px;
+left: 150px;
+border-radius: 50px;
+border: solid 5px;
+border-color: yellowgreen;
+z-index: 3;
+}
+
+.Center{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    position: absolute;
+    background: #424549;
+    width: 250px;
+    height: 200px;
+    left: 75px;
+    top: 200px;
+    opacity: 0.7;
+
+    text-align: center;
+    border-left: solid 3px;
+    border-right: solid 3px;
+    border-bottom: solid 3px;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    z-index: 0;
+}
+.Nombre {
+    grid-row: 2/3;
+}
+.Puesto {
+    grid-row: 3/4;
 }
 
 
+.Bottom-container{
+    position: absolute;
+    z-index: 0;
+    height: 140px;
+    width: 400px;
+    background: greenyellow;
+    
+    opacity: 0.6;
+    bottom: 0px;
+}
 
+.Bottom-topcenter{
+box-sizing: border-box;
+position: absolute;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+height: 40px;
+width: 400px;
+text-align: center;
+background: peru;
+top: 0px;
+
+
+
+
+}
+.Bottom-topleft{
+    box-sizing: border-box;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background: purple;
+    bottom: 50px;
+    text-align: center;
+    padding-bottom: 5px;
+
+}
+.Bottom-topright{
+    box-sizing: border-box;
+    text-align: center;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background: red;
+    right: 0px;
+    bottom: 50px;
+    padding-bottom: 5px;
+}
+.Bottom{
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    background: #03396c;
+    bottom: 0px;
+}
     </style>
 
 </head>
 <body>
     
     <div class="Structure">
+        
     <div class="Top"></div>
     <div class="Image"></div>
-    <div class="Center"></div>
+    <div class="Center">
+        <h1 class="Nombre">Fabian Whijares</h1>
+        <h2 class="Puesto">FullStack Developer</h2>
+
+    </div>
 
     <div class="Bottom-container">
-        <div class="Bottom-topleft"></div>
-        <div class="Bottom-topright"></div>
+        <div class="Bottom-topcenter">
+            <img src="" alt="Mexico">
+            <img src="" alt="LinkedIn">
+            <img src="" alt="GitHub">
+            <img src="" alt="E-mail">
+        </div>
+        <div class="Bottom-topleft">
+            Followers:
+            <p>2</p>
+        </div>
+        <div class="Bottom-topright">
+            Following:
+            <p>1500</p>
+        </div>
         <div class="Bottom"></div>
     </div>
 </div>
